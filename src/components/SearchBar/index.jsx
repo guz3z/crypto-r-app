@@ -33,9 +33,8 @@ export const SearchBar = () => {
     return (
         <div className="coin-app">
             <div className="search-coin">
-                <h1 className="coin-text">Search a coin</h1>
                 <form>
-                    <input type="text" placeholder="Search" className="coin-input" onChange={handleChange}/>
+                    <input type="text" placeholder="Search a coin" className="coin-input" onChange={handleChange}/>
                 </form>
 
             </div>
