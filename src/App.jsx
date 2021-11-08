@@ -1,6 +1,6 @@
 import React from 'react';
 import { SearchBar } from './components/SearchBar/index.jsx';
-import { Coin } from './components/Coin/index.jsx'
+import CoinHeader from './layout/CoinHeader/index.jsx';
 import './style.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     return (
         <>
             <h1>ZeeCrypto Tracker</h1>
+            <CoinHeader />
             <SearchBar />
             
 

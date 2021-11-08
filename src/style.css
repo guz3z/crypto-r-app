@@ -30,15 +30,21 @@ footer {
     outline: none;
     color: white;
     height: 30px;
-    border: 1px solid rgb(48, 5, 5);
+    border: 1px solid rgb(44, 0, 0);
     border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(54, 0, 0, 0.5);
+    padding-left: 10px;
 
+}
+.coin-input::placeholder {
+    color: rgb(163, 163, 163);
 }
 
 .search-coin {
-    min-width: 100%;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 
