@@ -9,7 +9,7 @@ function App() {
         <>
             <h1>ZeeCrypto Tracker</h1>
             <SearchBar />
-            <Coin />
+            
 
 
             <footer>Zerhjosh Guzman, 2021</footer>
@@ -17,5 +17,6 @@ function App() {
     )
 };
 
+export default App;
 
 

@@ -1,13 +1,6 @@
 import React, { useState } from 'react'
 
-export const Coin = ({image, coinname, symbol, price, volume}) => {
-
-    const [ search, setSearch ] = useState('');
-
-    const handleChange = e => {
-        setSearch(e.target.value)
-    }
-
+export const Coin = ({image, coinname, symbol, price, volume, priceChange, marketcap}) => {
 
     return (
         <div className="coin-container">
@@ -20,11 +13,17 @@ export const Coin = ({image, coinname, symbol, price, volume}) => {
                 <div className="coin-data">
                     <p className="coin-price">${price}</p>
                     <p className="coin-volume">${volume.toLocaleString()}</p>
+                    {priceChange < 0 ? (
+                        <p className="coin-percent red">{priceChange.toFixed(2)}%</p>    //put % to 2 decimal places and to red if less than 0
+                    ) : (<p className="coin-percent green">{priceChange.toFixed(2)}%</p> )
+                }
+                <p className="coin-marketcap">Mkt Cap: ${marketcap.toLocaleString()}</p>
                 </div>
             </div>
             
         </div>
     )
 }
+
 
 

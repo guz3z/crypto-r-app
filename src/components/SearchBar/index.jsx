@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import { handleChange } from 'Coin';
+import { Coin } from '../Coin';
+
 
 
 export const SearchBar = () => {
 
     const [ coins, setCoins ] = useState([]);
+    const [ search, setSearch ] = useState('');
 
     useEffect(() => {
         async function fetchCryptoAPI() {
@@ -17,8 +19,16 @@ export const SearchBar = () => {
                 console.warn(err);
                 setCoins("Cant fetch coins API")
             }
-        }
+        } fetchCryptoAPI();
     }, []);
+
+    const handleChange = e => {
+        setSearch(e.target.value)
+    }
+
+    const filteredCoins = coins.filter(coin => 
+        coin.name.toLowerCase().includes(search.toLowerCase())    
+    )
 
     return (
         <div className="coin-app">
@@ -29,6 +39,20 @@ export const SearchBar = () => {
                 </form>
 
             </div>
+            {filteredCoins.map(coin => {
+                return (
+                    <Coin 
+                    key={coin.id} 
+                    coinname={coin.name} 
+                    image={coin.image}
+                    symbol={coin.symbol} 
+                    marketcap={coin.market_cap}
+                    price={coin.current_price}
+                    priceChange={coin.price_change_percentage_24h}
+                    volume={coin.total_volume}
+                     /> 
+                )
+            })}
 
         </div>
 
