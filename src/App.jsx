@@ -1,5 +1,5 @@
 import React from 'react';
-import { searchBar } from './components/SearchBar/index'
+import { SearchBar } from './components/SearchBar/index.jsx';
 import './style.css';
 
 function App() {
@@ -7,8 +7,8 @@ function App() {
     return (
         <>
             <h1>ZeeCrypto Tracker</h1>
+            <SearchBar />
 
-            <searchBar />
 
             <footer>Zerhjosh Guzman, 2021</footer>
         </>

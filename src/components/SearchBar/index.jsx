@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 
 
-export const searchBar = () => {
+export const SearchBar = () => {
 
     const [ coins, setCoins ] = useState([]);
 
@@ -23,7 +23,7 @@ export const searchBar = () => {
         <div className="coin-app">
             <div className="search-coin">
                 <h1 className="coin-text">Search a coin</h1>
-                <form>x
+                <form>
                     <input type="text" placeholder="Search" className="coin-input" />
                 </form>
 
