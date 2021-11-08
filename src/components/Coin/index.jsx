@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Coins = ({image, coinname, symbol, price, volume}) => {
+export const Coin = ({image, coinname, symbol, price, volume}) => {
+
+    const [ search, setSearch ] = useState('');
+
+    const handleChange = e => {
+        setSearch(e.target.value)
+    }
+
+
     return (
         <div className="coin-container">
             <div className="coin-row">
@@ -19,4 +27,4 @@ const Coins = ({image, coinname, symbol, price, volume}) => {
     )
 }
 
-export default Coins
+

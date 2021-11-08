@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import { handleChange } from 'Coin';
 
 
 export const SearchBar = () => {
@@ -24,7 +25,7 @@ export const SearchBar = () => {
             <div className="search-coin">
                 <h1 className="coin-text">Search a coin</h1>
                 <form>
-                    <input type="text" placeholder="Search" className="coin-input" />
+                    <input type="text" placeholder="Search" className="coin-input" onChange={handleChange}/>
                 </form>
 
             </div>
