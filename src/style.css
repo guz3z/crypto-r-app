@@ -30,23 +30,80 @@ footer {
     outline: none;
     color: white;
     height: 30px;
-    border: 1px solid rgb(48, 5, 5);
+    border: 1px solid rgb(44, 0, 0);
     border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(54, 0, 0, 0.5);
+    padding-left: 10px;
 
+}
+.coin-input::placeholder {
+    color: rgb(163, 163, 163);
 }
 
 .search-coin {
-    min-width: 100%;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*coinheader*/
+.coin-header {
+    width: 70%;
+    height: 40px;
+    color: rgb(190, 190, 190);
+    text-align: start;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 5px 10px;
+}
+
+.coin-title {
+    margin-left: 6.5%;
+}
+
+.ticker {
+    margin-left: 11%;
+    max-width: 10%;
+    min-width: 10%;
+}
+
+.title-price {
+    margin-right: -20px;
+    max-width: 10%;
+    min-width: 10%;
+}
+
+.title-change {
+    max-width: 15%;
+    min-width: 15%;
+    margin-right: 30px;
+
+}
+
+.title-volume {
+    margin-right: 50px;
+    max-width: 15%;
+    min-width: 15%;
+}
+
+.title-marketcap {
+    margin-right: -30px;
+    max-width: 15%;
+    min-width: 15%;
 }
 
 
+.coin-app {
+    height: 84vh;
+    overflow: hidden;
+}
 /*For the coin container*/
 .coin-container {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .coin-row {

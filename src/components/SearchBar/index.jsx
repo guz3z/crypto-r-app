@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import { Coin } from '../Coin';
+import CoinHeader from '../../layout/CoinHeader';
+import '../../style.css';
 
 
 
@@ -38,6 +40,7 @@ export const SearchBar = () => {
                 </form>
 
             </div>
+            <CoinHeader />
             {filteredCoins.map(coin => {
                 return (
                     <Coin 
