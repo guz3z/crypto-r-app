@@ -47,6 +47,16 @@ footer {
     padding-bottom: 30px;
 }
 
+/*coinheader*/
+.coin-header {
+    width: 70%;
+    height: 40px;
+    color: white;
+    text-align: start;
+    background-color:violet;
+    margin: auto;
+}
+
 
 /*For the coin container*/
 .coin-container {
