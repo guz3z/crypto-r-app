@@ -9,7 +9,7 @@ const CoinHeader = () => {
             <p className="title-price">Price</p>
             <p className="title-change">Change (24h)</p>
             <p className="title-volume">Volume (24h)</p>
-            <p className="title-marketcap">Mkt cap</p>
+            <p className="title-marketcap">Market cap</p>
       
             
         </div>

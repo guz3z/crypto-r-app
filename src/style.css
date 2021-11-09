@@ -51,10 +51,48 @@ footer {
 .coin-header {
     width: 70%;
     height: 40px;
-    color: white;
+    color: rgb(190, 190, 190);
     text-align: start;
-    background-color:violet;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    padding: 5px 10px;
+}
+
+.coin-title {
+    margin-left: 6.5%;
+}
+
+.ticker {
+    margin-left: 11%;
+    max-width: 10%;
+    min-width: 10%;
+}
+
+.title-price {
+    margin-right: -20px;
+    max-width: 10%;
+    min-width: 10%;
+}
+
+.title-change {
+    max-width: 15%;
+    min-width: 15%;
+    margin-right: 30px;
+
+}
+
+.title-volume {
+    margin-right: 50px;
+    max-width: 15%;
+    min-width: 15%;
+}
+
+.title-marketcap {
+    margin-right: -30px;
+    max-width: 15%;
+    min-width: 15%;
 }
 
 
