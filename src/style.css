@@ -96,11 +96,14 @@ footer {
 }
 
 
+.coin-app {
+    height: 84vh;
+    overflow: hidden;
+}
 /*For the coin container*/
 .coin-container {
     display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 .coin-row {
